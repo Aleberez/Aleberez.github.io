@@ -1,94 +1,325 @@
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>ALEBEREZ</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
-		<link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-	<header class="page-header">
-		<div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg" width="150" height="90">
-      	</div>
-		<nav class=main-menu>
-        <ul>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Посты</a></li>
-          <li><a href="">Обо мне</a></li>
-          <li><a href="https://vk.com/aleberez">Связь</a></li>
-        </ul>
-      </nav>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>  
+  <nav class="navbar navbar-expand-sm bg-info navbar-light fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="https://htmlacademy.ru/">HTML&CSS</a>
 
-	</header>
-	
-	<main>
-		<article class="about-me">
-        <section class="profile">
-			<h1>Привет</h1>
-          <p>Меня зовут Алекс. Я веб-разработчик.</p>
-          <p><small>Живу в Таганроге и НЕ работаю в HTML Academy консультантом по созданию учебных курсов.</small></p>
-        </section>
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <aside class="last-actions">
-			 <ul>
-            <li>Зачекинился на кухне <time>час назад</time></li>
-            <li>Принесли немного еды <a href="#food">#food</a> <time>два часа назад</time></li>
-            <li>Зачекинился в ванной <time>вчера</time></li>
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="https://vk.com/aleberez">VK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> 
+    </ul>
+  </div> 
+
+    <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+    </form>
+
+</nav>
+
+<div id="demo" class="carousel slide " data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://sparkprogram.org/wp-content/uploads/2017/06/chicago.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.academybuscharter.com/images/homeSlider/panorama-New-York-1.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Bootstrap Test</h1>      
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec ligula eget augue cursus porttitor. Fusce pharetra metus arcu, id ultricies ipsum venenatis vel. Sed non ultricies sapien. In iaculis fermentum iaculis. Vivamus posuere, leo et eleifend dignissim, lacus metus fermentum dui, ac mattis turpis ipsum nec dui. Proin sagittis faucibus velit, quis pretium leo porttitor tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed et diam eget ante tempus mattis sit amet quis nunc. Sed auctor a magna in commodo. Aenean nec tempus mauris.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Колонка 1</h3>
+      <p>Просто текст ..</p>
+      <p>Новый текст..</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Колонка 2</h3>
+      <p>Просто текст ..</p>
+      <p>Новый текст..</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Колонка 3</h3> 
+      <p>Просто текст ..</p>
+      <p>Новый текст..</p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="card-columns mx-auto">
+  <div class="card">
+    <img class="card-img-top" src="https://html5css.ru/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John CSS</h4>
+      <p class="card-text">Some example text some example text. John CSS is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Jane Doe</h4>
+      <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+    <img class="card-img-bottom" src="https://html5css.ru/bootstrap4/img_avatar5.png" alt="Card image" style="width:100%">
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://html5css.ru/bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John CSS</h4>
+      <p class="card-text">Some example text some example text. John CSS is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2>Cards Columns</h2>
+  <p>The .card-columns class creates a masonry-like grid of cards. The layout will automatically adjust as you insert more cards.</p>
+  <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+  <div class="card-columns">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the first card</p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the second card</p>
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the third card</p>
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the fourth card</p>
+      </div>
+    </div>  
+    <div class="card bg-light">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the fifth card</p>
+      </div>
+    </div>
+    <div class="card bg-info">
+      <div class="card-body text-center">
+        <p class="card-text">Some text inside the sixth card</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+  <footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
           </ul>
-        </aside>
-    	</article>
-    	<article class="about-me">
-        <section class="profile">
-			<h1>Что-то интересное</h1>
-          <p>Что-то интересное</p>
-          <p><small>Что-то интересное</small></p>
-        </section>
 
-        <aside class="last-actions">
-			 <ul>
-            <li>Что-то интересное<time>Что-то интересное</time></li>
-            <li>Что-то интересное<a href="#*********">#Что-то интересное</a> <time>Что-то интересное</time></li>
-            <li>Что-то интересное<time>Что-то интересное</time></li>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
           </ul>
-        </aside>
-    	</article>
-    	<article class="about-me">
-        <section class="profile">
-			<h1>Что-то интересное</h1>
-          <p>Что-то интересное</p>
-          <p><small>Что-то интересное</small></p>
-        </section>
 
-        <aside class="last-actions">
-			 <ul>
-            <li>Что-то интересное<time>Что-то интересное</time></li>
-            <li>Что-то интересное<a href="#Что-то интересное">#Что-то интересное</a> <time>Что-то интересное</time></li>
-            <li>Что-то интересное<time>Что-то интересное</time></li>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
           </ul>
-        </aside>
-    	</article>
 
+        </div>
+        <!-- Grid column -->
 
-    	<section class="posts">
-        	<article class="featured-post">
-          			<header>
-            			<h1><a href="#post-1">Чешуя на градиентах</a></h1>
-          			</header>
-          		<section><p>В этом посте я расскажу как делать повторяющийся чешуйчатый фон на CSS-градиентах. Будем использовать градиенты в сочетании со свойством <code>background-size</code>.</p></section>
-        	</article>
-    	</section>
+      </div>
+      <!-- Grid row -->
 
-	</main>
-	
-		<footer class="page-footer">
-      		<section class="info">
-      		<img src="https://pp.userapi.com/c847216/v847216419/e9598/yhcy6njVXLo.jpg" width="50" alt="Мой портрет">Алексей, lazfnol@gmail.com
-			</section>
-			<section class="copyright">
-      		© 2018 ALEBEREZ
-			</section>
+    </div>
+    <!-- Footer Links -->
 
-		</footer>
-	</body>
-</html>
+    <hr>
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+    <hr>
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://bootstrap.com/education/bootstrap/">Bootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+</body>
